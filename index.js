@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 // Start server
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`API listening on port ${port}`);
 });
